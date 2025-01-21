@@ -1,0 +1,69 @@
+/* Глобальный сброс стилей для HTML */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    font: Arial 600 16px/1 sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+:root {
+    --primary-color: #000; /* Добавьте глобальные переменные для удобства */
+    --secondary-color: #666;
+    --font-size-base: 16px;
+}
