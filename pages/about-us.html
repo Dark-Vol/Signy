@@ -4,57 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="/img/svg/favicon.svg" type="image/x-icon">
-    <title>Контакты</title>
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <title>Про нас</title>
 </head>
 
 <body>
-    <header id="header">
-        <div>
-            <a href="/main.html"><img src="/img/svg/logo.svg" alt=""></a>
-            <div>
-                <div>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="/main.html" class="header__logo"><img src="/img/svg/logo.svg" alt=""></a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
                     <span></span>
                 </div>
-                <nav id="menu__body">
-                    <ul id="menu-list">
+                <nav class="menu__body" id="menu__body">
+                    <ul class="menu__list" id="menu-list">
                         <li>
-                            <a href="#">0 800 750 643</a>
-                            <img src="img/v.svg" alt="">
-                            <ul>
+                            <a href="#" class="menu__link menu__sub-title">0 800 750 643</a>
+                            <img class="menu__arrow" src="/img/svg/v.svg" alt="">
+                            <ul class="menu__sub-list">
                                 <li>
-                                    <a href="#">+380 50 579 94 37</a>
+                                    <a href="#" class="menu__sub-link">+380 50 589 94 37</a>
                                 </li>
                                 <li>
-                                    <a href="#">+380 98 845 39 23</a>
+                                    <a href="#" class="menu__sub-link">+380 98 845 39 23</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="about-us.html">ПРО НАС</a>
-                            <img src="/img/svg/v.svg" alt="">
-                            <ul>
-                                <li><a href="pages/blog.html">Блог</a></li>
-                                <li><a href="pages/video.html">Видео</a></li>
-                                <li><a href="pages/faq.html">Вопросы</a></li>
+                            <a href="/pages/about-us.html" class="menu__link menu__sub-title">ПРО НАС</a>
+                            <img class="menu__arrow" src="/img/svg/v.svg" alt="">
+                            <ul class="menu__sub-list">
+                                <li>
+                                    <a href="/pages/blog.html" class="menu__sub-link">блог</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/video.html" class="menu__sub-link">Видео</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/faq.html" class="menu__sub-link">Вопросы</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
-                            <a data-goto="#" href="contact.html">КОНТАКТЫ</a>
+                            <a data-goto="#" href="contact.html" class="menu__link">КОНТАКТЫ</a>
                         </li>
                         <li>
-                            <a data-goto="#" href="#">ВХОД</a>
+                            <a data-goto="#" href="#" class="btn btn-line header__btn">ВХОД</a>
                         </li>
                         <li>
-                            <a data-goto="#" href="#">РЕГИСТРАЦИЯ</a>
+                            <a data-goto="#" href="#" class="btn header__btn">РЕГИСТРАЦИЯ</a>
                         </li>
                         <li>
-                            <a href="#">РУС</a>
-                            <img src="/img/svg/v.svg" alt="">
-                            <ul>
-                                <li><a href="#">УКР</a></li>
+                            <a href="#" class="menu__link menu__sub-title">РУС</a>
+                            <img class="menu__arrow" src="/img/svg/v.svg" alt="">
+                            <ul class="menu__sub-list menu__sub-list--lang">
+                                <li>
+                                    <a href="#" class="menu__sub-link">УКР</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -62,7 +70,6 @@
             </div>
         </div>
     </header>
-
     <main class="main">
         <div class="container">
             <div class="path">
@@ -71,14 +78,13 @@
                 <a href="/pages/blog.html" class="path__link">Про нас</a>
             </div>
         </div>
-
         <div class="about-us">
             <div class="about-us__container container">
                 <div class="about-us__title title">Страница про нас</div>
                 <div class="about-us__content">
                     <div class="about-us__text">
                         <div class="about-us__img">
-                            <img src="img/about-us.png" alt="">
+                            <img src="/img/about-us.png" alt="">
                         </div>
 
                         <div class="about-us__text">
@@ -90,21 +96,23 @@
                             <p>
                                 Если у вас есть какие то интересные предложения, обращайтесь!
                                 Студия Web-Boss всегда готова решить любую задачу.
-                                Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+                                Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в 
+                                формировании системы обучения кадров, соответствует насущным потребностям.
                             </p>
                             <p>
-                                Таким образом новая модель организационной деятельности способствует подготовки и реализации систем массового участия.
-                                Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+                                Таким образом новая модель организационной деятельности способствует подготовки и 
+                                реализации систем массового участия. Повседневная практика показывает, что укрепление и 
+                                развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших 
+                                направлений развития.
                             </p>
                             <p>
                                 Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития.
                                 С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.
                             </p>
                         </div>
-
                         <div class="quote">
                             <div class="quote__img">
-                                <img src="img/about-us-quote.png" alt="">
+                                <img src="/img/about-us-quote.png" alt="">
                             </div>
                             <div class="quote__body">
                                 <blockquote>
@@ -119,27 +127,25 @@
                     </div>
                 </div>
             </div>
-
             <div class="friends">
                 <div class="friends__container container">
                     <div class="friends__title title">Друзья Signy</div>
                     <div class="friends__grid">
                         <div class="friends__item">
-                            <img src="img/home/friend-1.png" alt="">
+                            <img src="/img/home/friend-1.png" alt="">
                         </div>
                         <div class="friends__item">
-                            <img src="img/home/friend-2.png" alt="">
+                            <img src="/img/home/friend-2.png" alt="">
                         </div>
                         <div class="friends__item">
-                            <img src="img/home/friend-3.png" alt="">
+                            <img src="/img/home/friend-3.png" alt="">
                         </div>
                         <div class="friends__item">
-                            <img src="img/home/friend-4.png" alt="">
+                            <img src="/img/home/friend-4.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="about-us">
                 <div class="about-us__container container">
                     <div class="about-us__text">
@@ -147,7 +153,6 @@
                             Постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития.
                             Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
                         </p>
-
                         <p>
                             Сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.
                             С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.
@@ -156,7 +161,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="news green">
                 <div class="news__title title">Подпишись на наши новости!</div>
                 <div class="news__description">Введи свой электронный адрес и будь в курсе всех обновлений</div>
@@ -165,7 +169,6 @@
                     <button type="button" class="news__btn btn">ОТПРАВИТЬ</button>
                 </form>
             </div>
-
             <div class="new__news green">
                 <div class="new__news__container container">
                     <h3 class="new__news__title title">Отлично!</h3>
@@ -178,8 +181,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__grid">
-                
-                <div class="footer__logo"><a href="#"><img src="img/footer-logo.svg" alt="#"></a></div>
+                <div class="footer__logo"><a href="#"><img src="/img/svg/footer-logo.svg" alt="#"></a></div>
                 <div class="footer__item footer__section">
                     <div class="footer__section-1">
                         <div>
@@ -197,14 +199,11 @@
                             <a href="#" class="footer__link">Контакты</a>
                         </div>
                     </div>
-                    
                 </div>
-
                 <div class="footer__item footer__email">
                     <p>infosmartsign@smarttender.biz</p>
                     <p>Facebook</p>
                 </div>
-
                 <div class="footer__item footer__contact">
                     <p class="footer__grey">пр-т Миколи Бажана, 14 А<br>Київ, 02072</p>
                     <p class="footer__grey">0 800 750643</p>
@@ -215,19 +214,13 @@
                 <div class="footer__footer footer__grey">Договір оферти</div>
                 <div class="footer__footer footer__grey">Безпека сервісу</div>
             </div>
-
             <a href="#" class="scrollup" id="scroll-up">
-                <img src="img/arrow.svg" alt="">
+                <img src="/img/svg/arrow.svg" alt="">
             </a>
         </div>
     </footer>
-
-
-    <!--=============== SCROLL REVEAL ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== APP JS ===============-->
-    <script src="js/app.min.js"></script>
+    <script src="/js/app.min.js"></script>
 </body>
 
 </html>
