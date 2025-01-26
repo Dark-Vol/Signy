@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="/img/svg/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
     <title>Signy</title>
 </head>
 
 <body>
-    <header id="header">
-        <div>
-            <a href="/main.html"><img src="/img/svg/logo.svg" alt=""></a>
-            <div>
-                <div>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="/main.html" class="header__logo"><img src="/img/svg/logo.svg" alt=""></a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
                     <span></span>
                 </div>
-                <nav id="menu__body">
-                    <ul id="menu-list">
+                <nav class="menu__body" id="menu__body">
+                    <ul class="menu__list" id="menu-list">
                         <li>
-                            <a href="#">0 800 750 643</a>
-                            <img src="img/v.svg" alt="">
-                            <ul>
+                            <a href="#" class="menu__link menu__sub-title">0 800 750 643</a>
+                            <img class="menu__arrow" src="/img/svg/v.svg" alt="">
+                            <ul class="menu__sub-list">
                                 <li>
-                                    <a href="#">+380 50 579 94 37</a>
+                                    <a href="#" class="menu__sub-link">+380 50 589 94 37</a>
                                 </li>
                                 <li>
-                                    <a href="#">+380 98 845 39 23</a>
+                                    <a href="#" class="menu__sub-link">+380 98 845 39 23</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="about-us.html">ПРО НАС</a>
-                            <img src="/img/svg/v.svg" alt="">
-                            <ul>
-                                <li><a href="pages/blog.html">Блог</a></li>
-                                <li><a href="pages/video.html">Видео</a></li>
-                                <li><a href="pages/faq.html">Вопросы</a></li>
+                            <a href="/pages/about-us.html" class="menu__link menu__sub-title">ПРО НАС</a>
+                            <img class="menu__arrow" src="/img/svg/v.svg" alt="">
+                            <ul class="menu__sub-list">
+                                <li>
+                                    <a href="/pages/blog.html" class="menu__sub-link">блог</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/video.html" class="menu__sub-link">Видео</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/faq.html" class="menu__sub-link">Вопросы</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
-                            <a data-goto="#" href="contact.html">КОНТАКТЫ</a>
+                            <a data-goto="#" href="contact.html" class="menu__link">КОНТАКТЫ</a>
                         </li>
                         <li>
-                            <a data-goto="#" href="#">ВХОД</a>
+                            <a data-goto="#" href="#" class="btn btn-line header__btn">ВХОД</a>
                         </li>
                         <li>
-                            <a data-goto="#" href="#">РЕГИСТРАЦИЯ</a>
+                            <a data-goto="#" href="#" class="btn header__btn">РЕГИСТРАЦИЯ</a>
                         </li>
                         <li>
-                            <a href="#">РУС</a>
-                            <img src="/img/svg/v.svg" alt="">
-                            <ul>
-                                <li><a href="#">УКР</a></li>
+                            <a href="#" class="menu__link menu__sub-title">РУС</a>
+                            <img class="menu__arrow" src="/img/svg/v.svg" alt="">
+                            <ul class="menu__sub-list menu__sub-list--lang">
+                                <li>
+                                    <a href="#" class="menu__sub-link">УКР</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -61,373 +70,348 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <div>
-            <div>
-                <div>
-                    <div>Цифровой документооборот<br>в три этапа:</div>
-                    <div>
-                        <div>Быстрая регистрация</div>
-                        <div>
+    <main class="main">
+        <div class="banner">
+            <div class="banner__container container">
+                <div class="banner__body">
+                    <div class="banner__title title">Цифровой документооборот<br>в три этапа:</div>
+                    <div class="banner__description">
+                        <div class="banner__sub-title subtitle">Быстрая регистрация</div>
+                        <div class="banner__description-text">
                             Мы создали, возможно, самую простую регистрацию.
                             Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!
                         </div>
-                        <a href="#" data-modal="1">Попробовать Бесплатно</a>
-
-                        <!-- Модальное окон -->
-                        <div data-modal="1">
-                            <img src="/img/svg/close.svg"></img>
-                            <div>
-                                <h3>Демо версия</h3>
-                                <div>Заполни форму и наши менеджеры свяжутся с тобой</div>
-                                <form action="#" method="post" autocomplete="on">
-                                    <label for="username">Имя*:</label>
-                                    <input type="text" id="username" placeholder="Имя">
-                                    <label for="email">Электронная почта*:</label>
-                                    <input type="email" id="email" placeholder="ivan@mail.com">
-                                    <label for="tel">Телефон*:</label>
-                                    <input type="tel" id="tel" placeholder="+38 000 000 00 00">
-                                    <input type="button" value="Отправить" data-modal="2">
+                        <a href="#" class="banner__btn btn js-open-modal" data-modal="1">Попробовать Бесплатно</a>
+                        <div class="modal" data-modal="1">
+                            <img class="modal__cross js-modal-close" src="/img/popup/close.svg"></img>
+                            <div class="modal__body">
+                                <h3 class="modal__title subtitle">Демо версия</h3>
+                                <div class="modal__descripion">Заполни форму и наши менеджеры свяжутся с тобой</div>
+                                <form action="#" class="modal__form" method="post" autocomplete="on">
+                                    <label for="username" class="modal__label">Имя*:</label>
+                                    <input type="text" id="username" placeholder="Имя" class="modal__input">
+                                    <label for="email" class="modal__label">Электронная почта*:</label>
+                                    <input type="email" id="email" placeholder="ivan@mail.com" class="modal__input">
+                                    <label for="tel" class="modal__label">Телефон*:</label>
+                                    <input type="tel" id="tel" placeholder="+38 000 000 00 00" class="modal__input">
+                                    <input type="button" value="Отправить"
+                                        class="modal__btn js-open-modal js-modal-close" data-modal="2">
                                 </form>
                             </div>
                         </div>
-
-                        <div data-modal="2">
-                            <img src="/img/svg/close.svg"></img>
-                            <div>
-                                <h3>Демо версия</h3>
-                                <div>Заявка отправленна и наши менеджеры свяжутся с тобой в ближайшее время</div>
-                                <div>
-                                    <img src="/img/svg/icon.svg" alt="">
+                        <div class="modal" data-modal="2">
+                            <img class="modal__cross js-modal-close" src="/img/popup/close.svg"></img>
+                            <div class="modal__body-2">
+                                <h3 class="modal__title subtitle">Демо версия</h3>
+                                <div class="modal__descripion">
+                                    Заявка отправленна и наши менеджеры свяжутся с тобой в ближайшее время
+                                </div>
+                                <div class="modal__img">
+                                    <img src="/img/popup/icon.svg" alt="">
                                 </div>
                             </div>
                         </div>
-
-                        <div></div>
+                        <div class="overlay js-overlay-modal"></div>
                     </div>
                 </div>
-
-                <div>
-                    <img src="img/home/banner-1.png" alt="banner">
+                <div class="banner__img">
+                    <img src="/img/home/banner-1.png" alt="banner">
                 </div>
             </div>
         </div>
-
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <img src="img/home/benefits-1.svg" alt="benefits">
+        <div class="benefits">
+            <div class="benefits__container">
+                <div class="benefits__item">
+                    <div class="benefits__item-img">
+                        <img src="/img/home/benefits-1.svg" alt="benefits">
                     </div>
-                    <div>
-                        <div>Моментально</div>
-                        <div>Никаких задержек. 1 секунда на подписание</div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <img src="img/home/benefits-2.svg" alt="benefits">
-                    </div>
-                    <div>
-                        <div>Глобально</div>
-                        <div>Сервис доступен 24\7 со всех устройств.</div>
+                    <div class="benefits__item-description">
+                        <div class="benefits__item-title subtitle">Моментально</div>
+                        <div class="benefits__item-text">Никаких задержек. 1 секунда на подписание</div>
                     </div>
                 </div>
-
-                <div>
-                    <div>
-                        <img src="img/home/benefits-3.svg" alt="benefits">
+                <div class="benefits__item">
+                    <div class="benefits__item-img">
+                        <img src="/img/home/benefits-2.svg" alt="benefits">
                     </div>
-                    <div>
-                        <div>Экономно</div>
-                        <div>В 30 раз дешевле чем почта и курьеры</div>
+                    <div class="benefits__item-description">
+                        <div class="benefits__item-title subtitle">Глобально</div>
+                        <div class="benefits__item-text">Сервис доступен 24\7 со всех устройств.</div>
+                    </div>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item-img">
+                        <img src="/img/home/benefits-3.svg" alt="benefits">
+                    </div>
+                    <div class="benefits__item-description">
+                        <div class="benefits__item-title subtitle">Экономно</div>
+                        <div class="benefits__item-text">В 30 раз дешевле чем почта и курьеры</div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>Комфорт в работе</div>
-                        <ul>
-                            <li>
+        <div class="product">
+            <div class="product__container container">
+                <div class="product-1">
+                    <div class="product__body">
+                        <div class="product__title title">Комфорт в работе</div>
+                        <ul class="product__list">
+                            <li class="product__item">
                                 Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
                             </li>
-                            <li>
+                            <li class="product__item">
                                 Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
                             </li>
-                            <li>
+                            <li class="product__item">
                                 Загружай XML файл с собственным шаблоном готового документа. Это удобно!
                             </li>
-                            <li>
+                            <li class="product__item">
                                 Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
                             </li>
                         </ul>
-                        <div>Узнать больше</div>
+                        <div class="product__btn btn btn-line">Узнать больше</div>
                     </div>
-                    <div>
-                        <img src="img/home/product-1.png" alt="product-1">
+                    <div class="product__img">
+                        <img src="/img/home/product-1.png" alt="product-1">
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <img src="img/home/product-2.png" alt="product-1">
+                <div class="product-2">
+                    <div class="product__img">
+                        <img src="/img/home/product-2.png" alt="product-1">
                     </div>
-                    <div>
-                        <div>Наш продукт это:</div>
-                        <ul>
-                            <li>Web версия без установки программного обеспечения</li>
-                            <li>Возможность бесплатно и безлимитно обрабатывать входящие документы</li>
-                            <li>Простота интеграции с 1С и другими сервисами</li>
-                            <li>Поддержка входа через Mobile ID</li>
+                    <div class="product__body">
+                        <div class="product__title title">Наш продукт это:</div>
+                        <ul class="product__list">
+                            <li class="product__item">Web версия без установки программного обеспечения</li>
+                            <li class="product__item">
+                                Возможность бесплатно и безлимитно обрабатывать входящие документы
+                            </li>
+                            <li class="product__item">Простота интеграции с 1С и другими сервисами</li>
+                            <li class="product__item">Поддержка входа через Mobile ID</li>
                         </ul>
-                        <div>Зарегистрироваться</div>
+                        <div class="product__btn btn">Зарегистрироваться</div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div>
-            <div>Пакеты цифровых подписей</div>
-            <div>
-                <div>
-                    <div>Demo</div>
-                    <div>30 документів</div>
-                    <div><span>0</span>грн/місяць</div>
-                    <div>Зарегистрироваться</div>
+        <div class="packages container">
+            <div class="packages__title title">Пакеты цифровых подписей</div>
+            <div class="packages__grid">
+                <div class="package">
+                    <div class="package__title subtitle">Demo</div>
+                    <div class="package__description">30 документів</div>
+                    <div class="package__prise"><span>0</span>грн/місяць</div>
+                    <div class="package__btn btn">Зарегистрироваться</div>
                 </div>
-
-                <div>
-                    <div>Business</div>
-                    <div>1 000 документів</div>
-                    <div><span>1 000</span>грн/рік</div>
-                    <div>Закакзать</div>
+                <div class="package">
+                    <div class="package__title subtitle">Business</div>
+                    <div class="package__description">1 000 документів</div>
+                    <div class="package__prise"><span>1 000</span>грн/рік</div>
+                    <div class="package__btn btn">Закакзать</div>
                 </div>
-
-                <div>
-                    <div>Pro</div>
-                    <div>9 000 документів</div>
-                    <div><span>9 000</span>грн/рік</div>
-                    <div>Закакзать</div>
+                <div class="package">
+                    <div class="package__title subtitle">Pro</div>
+                    <div class="package__description">9 000 документів</div>
+                    <div class="package__prise"><span>9 000</span>грн/рік</div>
+                    <div class="package__btn btn">Закакзать</div>
                 </div>
-
-                <div>
-                    <div>Individual</div>
-                    <div>Необмежена кількість документів</div>
-                    <div>Связаться с нами</div>
+                <div class="package">
+                    <div class="package__title subtitle">Individual</div>
+                    <div class="package__description">Необмежена кількість документів</div>
+                    <div class="package__btn btn">Связаться с нами</div>
                 </div>
             </div>
         </div>
-
-        <div>
-            <div>5 820 125 114</div>
-            <div>подписано документов</div>
-            <div>
-                Наша компания уже более 30 лет создает удобные решения для бизнеса любого размера. 
+        <div class="info">
+            <div class="info__title title">5 820 125 114</div>
+            <div class="info__sud-title subtitle">подписано документов</div>
+            <div class="info__description">
+                Наша компания уже более 30 лет создает удобные решения для бизнеса любого размера.
                 Мы гордимся Signy как безопасным и комфортным продуктом
             </div>
         </div>
 
-
-        <div>
-            <div>
-                <div>Друзья Signy</div>
-                <div>
-                    <div>
-                        <img src="img/home/friend-1.png" alt="">
+        <div class="friends">
+            <div class="friends__container container">
+                <div class="friends__title title">Друзья Signy</div>
+                <div class="friends__grid">
+                    <div class="friends__item">
+                        <img src="/img/home/friend-1.png" alt="">
                     </div>
-                    <div>
-                        <img src="img/home/friend-2.png" alt="">
+                    <div class="friends__item">
+                        <img src="/img/home/friend-2.png" alt="">
                     </div>
-                    <div>
-                        <img src="img/home/friend-3.png" alt="">
+                    <div class="friends__item">
+                        <img src="/img/home/friend-3.png" alt="">
                     </div>
-                    <div>
-                        <img src="img/home/friend-4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <div>Интересно пишем про</div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="img/home/articl-1.png" alt="articl-1">
-                        </div>
-                        <div>28.05.2020</div>
-                        <div>Заголовок короткий в две строки</div>
-                    </div>
-        
-                    <div>
-                        <div>
-                            <img src="img/home/articl-2.png" alt="articl-1">
-                        </div>
-                        <div>28.05.2020</div>
-                        <div>Заголовок короткий в две строки</div>
-                    </div>
-        
-                    <div>
-                        <div>
-                            <img src="img/home/articl-1.png" alt="articl-1">
-                        </div>
-                        <div>22.01.2025</div>
-                        <div>Заголовок короткий в две строки</div>
+                    <div class="friends__item">
+                        <img src="/img/home/friend-4.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div>
-            <div>Познакомимся в живую?</div>
-            <div>
-                <div>
+        <div class="articles">
+            <div class="articles__container container">
+                <div class="articles__title title">Интересно пишем про</div>
+                <div class="articles__grid">
+                    <div class="articles__item">
+                        <div class="articles__img">
+                            <img src="/img/home/articl-1.png" alt="articl-1">
+                        </div>
+                        <div class="articles__data">28.05.2020</div>
+                        <div class="articles__sub-title subtitle">Заголовок короткий в две строки</div>
+                    </div>
+                    <div class="articles__item">
+                        <div class="articles__img">
+                            <img src="/img/home/articl-2.png" alt="articl-1">
+                        </div>
+                        <div class="articles__data">28.05.2020</div>
+                        <div class="articles__sub-title subtitle">Заголовок короткий в две строки</div>
+                    </div>
+                    <div class="articles__item">
+                        <div class="articles__img">
+                            <img src="/img/home/articl-1.png" alt="articl-1">
+                        </div>
+                        <div class="articles__data">28.05.2020</div>
+                        <div class="articles__sub-title subtitle">Заголовок короткий в две строки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="knowing">
+            <div class="knowing__title title">Познакомимся в живую?</div>
+            <div class="knowing__item">
+                <div class="knowing__video">
                     <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-
-        <div>
-            <div>
-                <div>Популярные вопросы и ответы на них</div>
-                <ul>
-                    <li>
-                        <input type="radio" name="faq" id="faq_1">
-                        <label for="faq_1">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</label>
-                        <div>
+        <div class="faq">
+            <div class="faq__container container">
+                <div class="faq__title title">Популярные вопросы и ответы на них</div>
+                <ul class="faq__list">
+                    <li class="faq__item">
+                        <input class="faq__item-input" type="radio" name="faq" id="faq_1">
+                        <label class="faq__item-title" for="faq_1">
+                            Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?
+                        </label>
+                        <div class="faq__item-text">
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Vel aperiam iure accusamus quidem deleniti in perspiciatis, reiciendis quos modi aliquam numquam et sequi!
-                                Quas reprehenderit autem asperiores quisquam.
-                                Perspiciatis, laboriosam.
+                                Quas reprehenderit autem asperiores quisquam. Perspiciatis, laboriosam.
                             </p>
                         </div>
                     </li>
 
-                    <li>
-                        <input type="radio" name="faq" id="faq_2">
-                        <label for="faq_2">
+                    <li class="faq__item">
+                        <input class="faq__item-input" type="radio" name="faq" id="faq_2">
+                        <label class="faq__item-title" for="faq_2">
                             Почему после ремонта дорога опять проваливается?
                         </label>
-                        <div>
+                        <div class="faq__item-text">
                             <p>Потому что делают ее без соблюдения технологических процессов.</p>
                         </div>
                     </li>
 
-                    <li>
-                        <input type="radio" name="faq" id="faq_3">
-                        <label for="faq_3">Видят ли микробы друг друга?</label>
-                        <div>
+                    <li class="faq__item">
+                        <input class="faq__item-input" type="radio" name="faq" id="faq_3">
+                        <label class="faq__item-title" for="faq_3">Видят ли микробы друг друга?</label>
+                        <div class="faq__item-text">
                             <p>Потому что делают ее без соблюдения технологических процессов.</p>
                         </div>
                     </li>
 
-                    <li>
-                        <input type="radio" name="faq" id="faq_4">
-                        <label for="faq_4">Почему кровь красная а вены синие?</label>
-                        <div>
+                    <li class="faq__item">
+                        <input class="faq__item-input" type="radio" name="faq" id="faq_4">
+                        <label class="faq__item-title" for="faq_4">Почему кровь красная а вены синие?</label>
+                        <div class="faq__item-text">
                             <p>Потому что делают ее без соблюдения технологических процессов.</p>
                         </div>
                     </li>
 
-                    <li>
-                        <input type="radio" name="faq" id="faq_5">
-                        <label for="faq_5">Из чего сделана радуга?</label>
-                        <div>
+                    <li class="faq__item">
+                        <input class="faq__item-input" type="radio" name="faq" id="faq_5">
+                        <label class="faq__item-title" for="faq_5">Из чего сделана радуга?</label>
+                        <div class="faq__item-text">
                             <p>Потому что делают ее без соблюдения технологических процессов.</p>
                         </div>
                     </li>
 
-                    <li>
-                        <input type="radio" name="faq" id="faq_6">
-                        <label for="faq_6">
-                            Почему после ремонта дорога опять проваливается?
-                        </label>
-                        <div>
+                    <li class="faq__item">
+                        <input class="faq__item-input" type="radio" name="faq" id="faq_6">
+                        <label class="faq__item-title" for="faq_6">
+                            Почему после ремонта дорога опять проваливается?</label>
+                        <div class="faq__item-text">
                             <p>Потому что делают ее без соблюдения технологических процессов.</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-
-        <div>
-            <div>Подпишись на наши новости!</div>
-            <div>Введи свой электронный адрес и будь в курсе всех обновлений</div>
-            <form method="post">
-                <input type="email" name="email" id="input">
-                <button type="button">ОТПРАВИТЬ</button>
+        <div class="news">
+            <div class="news__title title">Подпишись на наши новости!</div>
+            <div class="news__description">Введи свой электронный адрес и будь в курсе всех обновлений</div>
+            <form class="news__form" method="post">
+                <input type="email" name="email" id="input" class="news__input">
+                <button type="button" class="news__btn btn">ОТПРАВИТЬ</button>
             </form>
         </div>
-
-        <div>
-            <div>
-                <h3>Отлично!</h3>
-                <div>На адресс <span id="email"></span> теперь будут приходить самые важные
-                    новости
+        <div class="new__news">
+            <div class="new__news__container container">
+                <h3 class="new__news__title title">Отлично!</h3>
+                <div class="new__news__text">
+                    На адресс <span id="email"></span> теперь будут приходить самые важные новости
                 </div>
             </div>
         </div>
     </main>
-
-    <footer>
-        <div>
-            <div>
-    
-                <div><a href="#"><img src="/img/svg/footer-logo.svg" alt="#"></a></div>
-                <div>
-                    <div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__grid">
+                <div class="footer__logo"><a href="#"><img src="/img/svg/footer-logo.svg" alt="#"></a></div>
+                <div class="footer__item footer__section">
+                    <div class="footer__section-1">
                         <div>
-                            <a href="#">Про нас</a>
-                            <a href="#">Цены</a>
+                            <a href="#" class="footer__link">Про нас</a>
+                            <a href="#" class="footer__link">Цены</a>
                         </div>
                         <div>
-                            <a href="#">Вход</a>
-                            <a href="#">Регистрация</a>
+                            <a href="#" class="footer__link">Вход</a>
+                            <a href="#" class="footer__link">Регистрация</a>
                         </div>
                     </div>
-                    <div>
+                    <div class="footer__section-2">
                         <div>
-                            <a href="#">Блог</a>
-                            <a href="#">Контакты</a>
+                            <a href="#" class="footer__link">Блог</a>
+                            <a href="#" class="footer__link">Контакты</a>
                         </div>
                     </div>
-    
                 </div>
-    
-                <div>
+                <div class="footer__item footer__email">
                     <p>infosmartsign@smarttender.biz</p>
                     <p>Facebook</p>
                 </div>
-    
-                <div>
-                    <p>пр-т Миколи Бажана, 14 А<br>Київ, 02072</p>
-                    <p>0 800 750643</p>
-                    <p>+380 50 579 94 37</p>
-                    <p>+380 98 845 39 23</p>
+                <div class="footer__item footer__contact">
+                    <p class="footer__grey">пр-т Миколи Бажана, 14 А<br>Київ, 02072</p>
+                    <p class="footer__grey">0 800 750643</p>
+                    <p class="footer__grey">+380 44 334 56 43</p>
+                    <p class="footer__grey">+380 44 334 56 43</p>
                 </div>
-                <div>© 2020 Signy</div>
-                <div>Договір оферти</div>
-                <div>Безпека сервісу</div>
+                <div class="footer__footer footer__grey">© 2020 Signy</div>
+                <div class="footer__footer footer__grey">Договір оферти</div>
+                <div class="footer__footer footer__grey">Безпека сервісу</div>
             </div>
-    
-            <a href="#" id="scroll-up">
+            <a href="#" class="scrollup" id="scroll-up">
                 <img src="/img/svg/arrow.svg" alt="">
             </a>
         </div>
     </footer>
-
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script type="module" src="js/app.min.js"></script>
+    <script src="/js/app.min.js"></script>
 </body>
 
 </html>
